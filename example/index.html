@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="UTF-8" />
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title>Angular Scrollspy Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/materialize.min.css" media="screen,projection" >
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #ebebeb;
+    }
+    body, button {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    h1 {
+      padding-top: 50px;
+    }
+    img {
+      max-width: 100%;
+    }
+    nav {
+      position: fixed;
+      z-index: 3;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      background: rgba(255, 255, 255, 0.8);
+    }
+    nav li, nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center
+    }
+    nav li, nav a {
+      display: inline-block;
+    }
+    nav a {
+      padding: 20px;
+      /*color: #333;*/
+      color:#fff;
+      text-decoration: none;
+    }
+    a:hover {
+      /*background: #fff;*/
+      background:#64b5f6 ;
+    }
+    a.active {
+      /*background: #00AC7F;*/
+      background:#1565c0  ;
+      color: #fff;
+    }
+    .wrap {
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+    section {
+      padding: 50px 0 30px 0;
+    }
+    footer {
+      text-align: center;
+    }
+    button {
+      font-size: 18px;
+      border: 0;
+      padding: 15px 30px;
+      background: #00AC7F;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="index">
+    <img src="bg2.jpg"></img>
+  </div>
+<div class="wrap navbar-fixed" ng-controller="MyCtrl">
+  <nav style="background-color:#4285f4;color:white;">
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo hide-on-med-and-down">Logo</a>
+          <ul class="right">
+            <li><a href="#index" du-smooth-scroll du-scrollspy>Home</a></li>
+            <li><a href="#aboutUs" du-smooth-scroll du-scrollspy>About Us</a></li>
+            <li><a href="#team" du-smooth-scroll du-scrollspy>Team</a></li>
+            <li><a href="#contactUs" du-smooth-scroll du-scrollspy>Contact Us</a></li>
+            <li><a href="http://github.com/oblador/angular-scroll/">Project on Github</a></li>
+          </ul>
+        </div>
+  </nav>
+  <!-- <h1>Angular.js Scrollspy Example</h1> -->
+<div class="card">
+  <section id="aboutUs" class="card-content">
+    <h2>About Us</h2>
+    <p>Software Technologies believes in dealing with companies and candidates with integrity and a commitment to achieve a win-win scenario for both parties in the placement process. We screen our candidates carefully before presentating to insure we are providing the best match for our clients and likewise, we are upfront to our candidates about the companies we represent , and represent our candidate's interests in the matter of opportunity.</p>
+    <h3>Featured Services</h3>
+    <p>We welcome OPT/CPT,L1/L2, H1/H4, EAD/GC for job oriented training. Comprehensive courses designed by highly seasoned professionals. Intensive hands-on training, weekly assignments and projects, guaranteed placement assistance, resume preparation, mock interviews and interview questions. Revenue sharing/Competitive salary, practical tips & techniques, free career counseling for fresher from industry experts. Excellent package with direct deposits.</p>
+
+    <p>We welcome OPT/CPT,L1/L2, H1/H4, EAD/GC for job oriented training. Comprehensive courses designed by highly seasoned professionals. Intensive hands-on training, weekly assignments and projects, guaranteed placement assistance, resume preparation, mock interviews and interview questions. Revenue sharing/Competitive salary, practical tips & techniques, free career counseling for fresher from industry experts. Excellent package with direct deposits.</p>
+
+
+    <p>
+      Basically , we started Telikos because we have a bunch of ideas and we want to chase our dreams through them. Big Data Analytics and Internet of Things are our prime research areas. Yeah , we do develop some cool games and apps as hobby.
+    </p>
+     <p>
+      Basically , we started Telikos because we have a bunch of ideas and we want to chase our dreams through them. Big Data Analytics and Internet of Things are our prime research areas. Yeah , we do develop some cool games and apps as hobby.
+    </p>
+  </section>
+</div>
+  
+  <div class="card">
+  <section id="team" class="card-content">
+    <h2>Team</h2>
+    <!-- <p>Bacon ipsum dolor sit amet sausage tail capicola ground round hamburger ham hock. Short ribs pig andouille meatball, pastrami tri-tip fatback ham hock shank kielbasa swine. Rump pancetta jerky kielbasa doner beef ribs tongue hamburger strip steak drumstick andouille shoulder shank flank. Swine drumstick meatball pig beef sausage strip steak.</p> -->
+        <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="bg1.jpg">
+                <!-- <img src="http://lorempixel.com/580/250/nature/1"> --> <!-- random image -->
+                <div class="caption center-align">
+                  <h3>This is our big Tagline!</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="bg10.jpg"> <!-- random image -->
+                <div class="caption left-align">
+                  <h3>Left Aligned Caption</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="bg3.jpg"> <!-- random image -->
+                <div class="caption right-align">
+                  <h3>Right Aligned Caption</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+             
+            </ul>
+          </div>
+
+    <!-- <img src="http://lorempixel.com/1000/500/" alt="" /> -->
+
+  </section>
+</div>
+  
+<!--   <section id="contactUs">
+    <h2>Section 3</h2>
+    <p>Shank fatback pastrami short loin, turkey jowl kielbasa ribeye chicken jerky drumstick flank ham. Swine shankle pork belly kielbasa shoulder flank jowl, sirloin doner. Kevin tri-tip bresaola leberkas. Swine ball tip cow strip steak. Ham filet mignon pork chop, pork fatback andouille pork loin shoulder jowl swine strip steak turducken prosciutto rump.</p>
+
+    <img src="http://lorempixel.com/1000/400/" alt="" />
+
+    <p>Tongue tri-tip pastrami, shoulder rump pork belly ground round. Ham hock chuck leberkas doner, strip steak corned beef tri-tip capicola. Rump turkey ham sausage shankle. Flank shankle pork chop ham hock. Shankle venison kielbasa, pancetta swine beef ball tip t-bone bacon hamburger ground round ribeye flank. Turducken bacon bresaola, chicken kevin boudin ball tip strip steak filet mignon pork turkey shank ground round. Kielbasa fatback prosciutto pork chop, jerky ground round leberkas boudin ball tip beef shankle shoulder swine brisket.</p>
+  </section>
+ -->
+ <div class="card">
+  <section id="contactUs" class="card-content">
+    <h2>Contact Us</h2>
+  <!--   <img src="http://lorempixel.com/1000/600/" alt="" /> -->
+ <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+     <!--  <div class="row">
+        <div class="input-field col s12">
+          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+          <label for="disabled">Disabled</label>
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="mdi-editor-mode-edit prefix"></i>
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Textarea</label>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  </section>
+</div>
+    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a ng-click="toTheTop()" class="btn-floating btn-large red" id="gotoTop" style="display:none;">
+      <i class="large mdi-editor-mode-edit"></i>
+    </a>
+  </div>
+    <!-- <button ng-click="toTheTop()">Take me back!</button> or <button ng-click="toSection3()">To section 3</button> -->
+
+  <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+</div>
+<script src="js/angular.min.js"></script>
+<script src="../angular-scroll.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script> -->
+
+<script>
+angular.module('myApp', ['duScroll']);
+  angular.module('myApp').controller('MyCtrl', function($scope, $document){
+      // $document.on('scroll', function() {
+      //   if($document.scrollTop()>=500){
+      //     var gotoTop = angular.element(document.getElementById('gotoTop'));
+      //     $scope.visible = true;
+      //   console.log('Document scrolled to ', $document.scrollLeft(), $document.scrollTop());
+      // }
+      
+      // });
+      $(window).scroll(function(){
+ 
+        if ($(window).scrollTop() >= 100) {
+          $("#gotoTop").show().fadeIn(800);
+        }
+        else {
+          $("#gotoTop").hide().fadeOut(800);
+        }
+ 
+      });
+    $scope.toTheTop = function() {
+      
+      $document.scrollTopAnimated(0, 1000).then(function() {
+        console && console.log('You just scrolled to the top!');
+      });
+    }
+    var section3 = angular.element(document.getElementById('team'));
+    $scope.toSection3 = function() {
+      $document.scrollToElementAnimated(section3);
+    }
+  }
+).value('duScrollOffset', 30);
+
+ 
+</script>
+<script>
+$(document).ready(function(){
+            $('.materialboxed').materialbox();
+             $('.slider').slider({full_width: true});
+             $('.modal-trigger').leanModal();
+
+          });
+</script>
+</body>
+</html>
